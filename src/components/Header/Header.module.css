@@ -1,0 +1,37 @@
+.header {
+    /* background-color: #000; */
+    min-height: 111px;
+    color: #fff;
+    padding-top: 27px;
+    padding-bottom: 32px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__links_list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__links_list:nth-of-type(1) {
+    margin-right: auto;
+    order: -1;
+}
+
+.header__links_list:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.header__link {
+    text-decoration-color: transparent;
+    color: inherit;
+    transition: text-decoration-color .5s;
+}
+
+.header__link:hover {
+    text-decoration-color: inherit;
+}
