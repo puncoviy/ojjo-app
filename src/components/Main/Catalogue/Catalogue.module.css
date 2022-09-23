@@ -1,0 +1,27 @@
+.catalogue {
+    margin-bottom: 120px;
+}
+
+.title_link {
+    display: block;
+    text-align: center;
+    text-decoration-color: transparent;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 15px;
+    transition: text-decoration-color .5s;
+}
+
+.title_link:hover {
+    text-decoration-color: inherit;
+}
+
+.title {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    margin-bottom: 60px;
+}
