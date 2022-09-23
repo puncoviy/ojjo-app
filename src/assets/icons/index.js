@@ -1,3 +1,4 @@
+import { ReactComponent as Partner } from "./partner.svg"
 import { ReactComponent as ETIcon } from "./etsy.svg"
 import { ReactComponent as TGIcon } from "./telegram.svg"
 import { ReactComponent as FBIcon } from "./fb.svg"
@@ -13,5 +14,6 @@ import { ReactComponent as FavouritesIcon } from "./favourites.svg"
 
 export {
     SearchIcon, ProfileIcon, FavouritesIcon, VisaIcon, MasterCardIcon,
-    PhoneIcon, MailIcon, YouTubeIcon, VKIcon, FBIcon, TGIcon, ETIcon
+    PhoneIcon, MailIcon, YouTubeIcon, VKIcon, FBIcon, TGIcon, ETIcon,
+    Partner
 }

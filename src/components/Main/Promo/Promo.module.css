@@ -1,0 +1,45 @@
+.promo {
+    min-height: 950px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    padding: 600px 0 50px;
+    color: #fff;
+}
+
+.partners {
+    margin-top: 80px;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.partners_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.partners_item {
+    position: relative;
+}
+
+.partners_item + .partners_item::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: -15px;
+}

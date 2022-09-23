@@ -9,7 +9,7 @@ export const Header = () => {
         <header className={classes.header}>
             <div className="container">
                 <nav className={classes.nav}>
-                    <a className="logo" href="#">
+                    <a className={classes.logo} href="#">
                         <img src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="OJJO" />
                     </a>
                     <ul className={classes.header__links_list}>

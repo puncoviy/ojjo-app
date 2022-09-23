@@ -39,8 +39,30 @@ body {
     line-height: 140%;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.btnBlack {
+    border-color: #FFFFFF;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.btnBlack:hover {
+    border-color: #333333;
+    background-color: #FFFFFF;
+    color: #333333;
 }

@@ -1,0 +1,12 @@
+.btn {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 35px;
+    border-width: 1px;
+    border-style: solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color .3s, color .3s, border-color .3s;
+}

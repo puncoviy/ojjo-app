@@ -1,17 +1,26 @@
 .header {
-    background-color: #000;
+    /* background-color: #000; */
     min-height: 111px;
     color: #fff;
     padding-top: 27px;
     padding-bottom: 32px;
-    /* background-color: transparent; */
-    /* transition: background-color .5s; */
+    background-color: transparent;
+    transition: background-color .5s;
+    position: fixed;
+    width: 100%;
 }
 
 .nav {
+    min-height: 52px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header__links_list {
