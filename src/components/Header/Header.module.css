@@ -4,6 +4,8 @@
     color: #fff;
     padding-top: 27px;
     padding-bottom: 32px;
+    /* background-color: transparent; */
+    /* transition: background-color .5s; */
 }
 
 .nav {
@@ -27,6 +29,8 @@
 }
 
 .header__link {
+    font-size: 14px;
+    line-height: 150%;
     text-decoration-color: transparent;
     color: inherit;
     transition: text-decoration-color .5s;
