@@ -4,7 +4,8 @@ import classes from './CardsList.module.css'
 
 
 export function CardsList() {
-    const { cards } = usePages();
+    const page = 3
+    const { cards } = usePages(page);
 
     const Card = (props) => {
         return (

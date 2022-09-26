@@ -8,11 +8,6 @@ import classes from './Pagination.module.css';
 export function Pagination() {
 
     const { pages } = usePages();
-    // const { newCards } = useCards();
-
-    // function toPage(value, onClick) {
-    //     onClick(value)
-    // }
 
     const [page, setPage] = useState(1)
     console.log(page)
@@ -24,14 +19,6 @@ export function Pagination() {
         setPage(page + 1)
     }
 
-    // const Page = ({ value, onClick }) => {
-    //     return (
-    //         <li className={classes.pagination_item}
-    //             onClick={() => onClick(value)}
-    //         >{value}</li>
-    //     )
-    // }
-
     const Page = ({ value }) => {
         return (
             <li className={classes.pagination_item}
@@ -41,28 +28,6 @@ export function Pagination() {
             >{value}</li>
         )
     }
-
-    // async function fetchCards() {
-    //     const response = await axios.get('https://rickandmortyapi.com/api/character')
-    //     const cardsList = response.data.results
-    //     const totalPages =
-    //         Array.from({ length: pages }).map((_, i) =>
-    //             <Page key={'page' + (i + 1)}
-    //                 value={i + 1}
-    //                 onClick={setPage}
-    //             />)
-    //     // return (
-    //     //     Array.from({ length: totalPages }).map((_, i) =>
-    //     //         <Page key={'page' + i}
-    //     //             value={i + 1}
-    //     //         onClick={setPage}
-    //     //         />
-    //     //     )
-    //     // )
-    // }
-
-
-
 
     return (
         <ul className={classes.pagination}>
