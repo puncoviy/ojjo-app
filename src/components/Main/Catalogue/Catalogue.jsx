@@ -1,6 +1,8 @@
 import React from 'react';
+import { CardsList } from './CardsList/CardsList';
 import classes from './Catalogue.module.css'
 import { Pagination } from './Pagination/Pagination';
+
 
 export const Catalogue = () => {
     return (
@@ -12,6 +14,7 @@ export const Catalogue = () => {
 
 
                 <Pagination />
+                <CardsList />
             </div>
         </section>
     );
