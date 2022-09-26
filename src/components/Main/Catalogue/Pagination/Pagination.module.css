@@ -1,10 +1,12 @@
 .pagination {
     min-height: 115px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
+    padding: 10px 0;
 }
 
 .pagination_item {

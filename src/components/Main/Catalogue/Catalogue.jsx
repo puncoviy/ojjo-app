@@ -11,10 +11,7 @@ export const Catalogue = () => {
                 <h3 className={classes.title}>Настоящая красота здесь!</h3>
 
 
-                <Pagination totalPages={10}
-                    currentPage='1'
-                    // onChange={updatePagination}
-                    />
+                <Pagination />
             </div>
         </section>
     );
