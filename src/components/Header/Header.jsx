@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './Header.module.css'
 import {
     SearchIcon, ProfileIcon, FavouritesIcon
 } from '../../assets/icons'
 
 export const Header = () => {
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 50);
+        });
+    }, []);
     return (
-        <header className={classes.header}>
+        <header className={scroll ? classes.bgheader : classes.header}>
             <div className="container">
                 <nav className={classes.nav}>
                     <a className={classes.logo} href="#">
