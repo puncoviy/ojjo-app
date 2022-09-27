@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { usePages } from '../../../hooks/pages';
-import { CardsList } from './CardsList/CardsList';
-import classes from './Catalogue.module.css'
-import { Pagination } from './Pagination/Pagination';
+import classes from './Catalogue.module.css';
+// import { CardsList } from './CardsList/CardsList';
+// import { Pagination } from './Pagination/Pagination';
 
 export const Catalogue = () => {
+    const { pages } = usePages();
     const [page, setPage] = useState(1)
     console.log(page)
 
     const prevPage = () => {
-        setPage(page - 1)
+        page > 1 && setPage(page - 1)
     }
     const nextPage = () => {
-        setPage(page + 1)
+        page < pages && setPage(page + 1)
     }
-    function PaginationPrimal() {
 
-        const { pages } = usePages();
+    function PaginationPrimal() {
     
         const Page = ({ value }) => {
             return (

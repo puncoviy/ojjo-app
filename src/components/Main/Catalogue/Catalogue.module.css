@@ -8,6 +8,7 @@
     text-decoration-color: transparent;
     font-size: 21px;
     line-height: 140%;
+    color: inherit;
     margin-bottom: 15px;
     transition: text-decoration-color .5s;
 }
